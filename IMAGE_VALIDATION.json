@@ -98,16 +98,18 @@
     "slug": "autodl-realesrgan-video",
     "public_name": "Real-ESRGAN-Video",
     "image_name": "Real-ESRGAN-Video-v1",
-    "review_submitted": false,
+    "review_submitted": true,
     "published": false,
     "instance": "c8b84e9f35-8f3f5ac1",
     "account_image_usage_before_gb": 27.66,
-    "updated_at": "2026-11-12T00:55:10.358442+08:00",
+    "updated_at": "2026-11-12T00:56:56.376984+08:00",
     "image_uuid": "image-c4b4ade6fc",
     "image_size_gb": 1.24,
     "image_status": "ready",
     "account_image_usage_gb": 28.9,
-    "free_quota_remaining_gb": 1.1
+    "free_quota_remaining_gb": 1.1,
+    "review_status": "pending",
+    "community_url": "https://www.autodl.art/i/zw2029181901/autodl-realesrgan-video/Real-ESRGAN-Video"
   },
   "restored_image_verified": false
 }
