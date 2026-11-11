@@ -1,0 +1,21 @@
+{
+  "id": "realesrgan-video",
+  "slug": "autodl-realesrgan-video",
+  "name": "Real-ESRGAN 视频超分",
+  "description": "视频2倍或4倍超分，通用快速、照片高细节与动漫三种模式，保留音轨，输出MP4。支持最长60秒、输出最高4K。",
+  "requires_gpu": true,
+  "torch": true,
+  "ffmpeg": true,
+  "imports": ["torch"],
+  "model_gb": 0.075,
+  "disk_gb": 5,
+  "gpu": "推荐8GB及以上显存；已验证硬件和耗时见IMAGE_VALIDATION.json。",
+  "license": "BSD-3-Clause（Real-ESRGAN）；Apache-2.0（RRDB架构）",
+  "source": "https://github.com/xinntao/Real-ESRGAN",
+  "models": {
+    "main": {"kind":"asset","filename":"realesr-general-x4v3.pth","bytes":4885111,"sha256":"8dc7edb9ac80ccdc30c3a5dca6616509367f05fbc184ad95b731f05bece96292","url":"https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"},
+    "detail": {"kind":"asset","filename":"RealESRGAN_x4plus.pth","bytes":67040989,"sha256":"4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1","url":"https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth"},
+    "anime": {"kind":"asset","filename":"realesr-animevideov3.pth","bytes":2504012,"sha256":"b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d","url":"https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth"}
+  },
+  "account": {"github":"zw2029181901","autodl_user":"200211"}
+}

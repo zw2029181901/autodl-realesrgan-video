@@ -1,0 +1,1 @@
+# Python dependencies are pinned in requirements-base.txt; ffmpeg/ffprobe are system packages.

@@ -1,0 +1,113 @@
+{
+  "standalone_http": {
+    "slug": "autodl-realesrgan-video",
+    "status": "passed",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "torch": "2.8.0+cu128",
+    "cases": [
+      {
+        "case": "general-audio",
+        "status": "passed",
+        "scale": 2,
+        "frames": 24,
+        "fps": "24/1",
+        "output_size": [
+          640,
+          360
+        ],
+        "audio": true,
+        "elapsed_seconds": 5.581,
+        "summary": "完成：320×180 → 640×360，24FPS，24帧，1.00秒；已保留音轨。耗时2.1秒。"
+      },
+      {
+        "case": "anime-fourfold",
+        "status": "passed",
+        "scale": 4,
+        "frames": 4,
+        "fps": "8/1",
+        "output_size": [
+          384,
+          256
+        ],
+        "audio": true,
+        "elapsed_seconds": 1.359,
+        "summary": "完成：96×64 → 384×256，8FPS，4帧，0.50秒；已保留音轨。耗时0.4秒。"
+      },
+      {
+        "case": "detail-tiled-silent",
+        "status": "passed",
+        "scale": 2,
+        "frames": 2,
+        "fps": "4/1",
+        "output_size": [
+          600,
+          128
+        ],
+        "audio": false,
+        "elapsed_seconds": 1.151,
+        "summary": "完成：300×64 → 600×128，4FPS，2帧，0.50秒；原视频无音轨。耗时0.5秒。"
+      },
+      {
+        "case": "fractional-rate",
+        "status": "passed",
+        "scale": 2,
+        "frames": 3,
+        "fps": "30000/1001",
+        "output_size": [
+          128,
+          96
+        ],
+        "audio": false,
+        "elapsed_seconds": 0.604,
+        "summary": "完成：64×48 → 128×96，29.97FPS，3帧，0.10秒；原视频无音轨。耗时0.2秒。"
+      }
+    ],
+    "restored_image_verified": false
+  },
+  "system_disk_migration": {
+    "slug": "autodl-realesrgan-video",
+    "status": "passed",
+    "verified_at": "2026-11-12T00:51:13.433651+08:00",
+    "system_disk_path": "/root/autodl-active",
+    "models": [
+      {
+        "path": "models/realesrgan-video/realesr-general-x4v3.pth",
+        "bytes": 4885111,
+        "sha256": "8dc7edb9ac80ccdc30c3a5dca6616509367f05fbc184ad95b731f05bece96292"
+      },
+      {
+        "path": "models/realesrgan-video/RealESRGAN_x4plus.pth",
+        "bytes": 67040989,
+        "sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1"
+      },
+      {
+        "path": "models/realesrgan-video/realesr-animevideov3.pth",
+        "bytes": 2504012,
+        "sha256": "b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d"
+      }
+    ],
+    "symlinks_portable": true,
+    "pip_check": "passed",
+    "offline_models": "passed",
+    "http6006": "passed",
+    "compute_mode": "GPU",
+    "restored_image_verified": false,
+    "autostart": "same configuration restored successfully for U2Net; this app not recreated"
+  },
+  "publication": {
+    "slug": "autodl-realesrgan-video",
+    "public_name": "Real-ESRGAN-Video",
+    "image_name": "Real-ESRGAN-Video-v1",
+    "review_submitted": false,
+    "published": false,
+    "instance": "c8b84e9f35-8f3f5ac1",
+    "account_image_usage_before_gb": 27.66,
+    "updated_at": "2026-11-12T00:55:10.358442+08:00",
+    "image_uuid": "image-c4b4ade6fc",
+    "image_size_gb": 1.24,
+    "image_status": "ready",
+    "account_image_usage_gb": 28.9,
+    "free_quota_remaining_gb": 1.1
+  },
+  "restored_image_verified": false
+}
